@@ -1,0 +1,15 @@
+$background:('base':hsl(205, 12%, 14%), 'light':hsl(205, 12%, 21%), 'dark':hsl(205, 12%, 7%)) !default;
+$foreground:('base':hsl(205, 27%, 90%), 'light':hsl(205, 27%, 97%), 'dark':hsl(205, 27%, 83%)) !default;
+$accent:('base':rgb(70, 154, 182), 'light':rgb(77, 167, 197), 'dark':rgb(55, 120, 142)) !default;
+$accent-offset:('base':rgb(255, 255, 255), 'light':rgb(255, 255, 255), 'dark':rgb(6, 41, 53)) !default;
+$danger:('base':#ff524d, 'light':#ff8581, 'dark':#f5332d) !default;
+$warning:('base':#f79138, 'light':#ffa85d, 'dark':#eb8a35) !default;
+$success:('base':rgb(94, 204, 114), 'light':rgb(108, 225, 130), 'dark':rgb(79, 175, 97)) !default;
+$info:('base':rgb(70, 154, 182), 'light':rgb(77, 167, 197), 'dark':rgb(55, 120, 142)) !default;
+
+$theme-colors: ('background': $background, 'foreground': $foreground, 'accent': $accent, 'accent-offset':$accent-offset, 'danger':$danger, 'warning':$warning, 'success':$success, 'info':$info);
+
+@function theme-color($key: 'foreground', $variant: 'base') {
+    $map: map-get($theme-colors, $key);
+    @return map-get($map, $variant);
+}

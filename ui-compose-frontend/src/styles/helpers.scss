@@ -1,0 +1,14 @@
+.page-padding{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.row-items{
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+
+    &>*{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}

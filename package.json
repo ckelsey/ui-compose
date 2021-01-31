@@ -1,0 +1,7 @@
+{
+    "name": "ui-compose",
+    "dependencies": {
+        "vue": "^2.6.11",
+        "@vue/cli": "latest"
+    }
+}
